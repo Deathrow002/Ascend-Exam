@@ -1,25 +1,25 @@
 package com.ascendcorp.exam.service;
 
-import com.ascendcorp.exam.model.InquiryServiceResultDTO;
-import com.ascendcorp.exam.model.TransferResponse;
-import com.ascendcorp.exam.proxy.BankProxyGateway;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.boot.web.server.WebServerException;
-
 import java.sql.SQLException;
 import java.util.Date;
 
-import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertNotNull;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyDouble;
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.mock;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import static org.mockito.Mockito.when;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.web.server.WebServerException;
+
+import com.ascendcorp.exam.model.InquiryServiceResultDTO;
+import com.ascendcorp.exam.model.TransferResponse;
+import com.ascendcorp.exam.proxy.BankProxyGateway;
+
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertNotNull;
 
 @RunWith(MockitoJUnitRunner.class)
 public class InquiryServiceTest {
